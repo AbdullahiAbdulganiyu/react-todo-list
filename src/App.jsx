@@ -1,7 +1,14 @@
 import React from "react";
+import TodoInput from "./components/TodoInput";
+import TodoList from "./components/TodoList";
 
 function App() {
-  return <main></main>;
+  return (
+    <main>
+      <TodoInput />
+      <TodoList />
+    </main>
+  );
 }
 
 export default App;
