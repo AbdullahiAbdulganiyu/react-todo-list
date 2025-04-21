@@ -1,5 +1,5 @@
-function TodoList() {
+import React from "react";
+
+export default function TodoList() {
   return <div></div>;
 }
-
-export default TodoList;
