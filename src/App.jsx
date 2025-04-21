@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <TodoInput />
-      <TodoList />
+      <TodoList todos={todos} />
     </>
   );
 }
