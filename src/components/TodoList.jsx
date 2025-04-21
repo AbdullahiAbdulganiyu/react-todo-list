@@ -12,6 +12,7 @@ export default function TodoList() {
         return (
           <li className="todoItem" key={index}>
             {todo}
+            <i class="fa-solid fa-pen-to-square"></i>
           </li>
         );
       })}
