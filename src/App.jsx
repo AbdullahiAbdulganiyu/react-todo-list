@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 
 function App() {
-  let todos = [
+  const [todos, setTodos] = useState([
     "Go to the Gym",
     "Eat some food and vegies",
     "Pick up the Kids from School",
-  ];
+  ]);
   return (
     <>
       <TodoInput />
