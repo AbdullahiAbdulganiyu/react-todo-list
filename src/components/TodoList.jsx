@@ -10,7 +10,11 @@ export default function TodoList() {
   return (
     <ul className="main">
       {todos.map((todo, index) => {
-        return <TodoCard key={index}></TodoCard>;
+        return (
+          <TodoCard key={index}>
+            <p>{todo}</p>
+          </TodoCard>
+        );
       })}
     </ul>
   );
