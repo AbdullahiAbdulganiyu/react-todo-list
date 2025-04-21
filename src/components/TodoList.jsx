@@ -7,7 +7,7 @@ export default function TodoList() {
     "Pick up the Kids from School",
   ];
   return (
-    <ul>
+    <ul className="main">
       {todos.map((todo, index) => {
         return <li key={index}>{todo}</li>;
       })}
