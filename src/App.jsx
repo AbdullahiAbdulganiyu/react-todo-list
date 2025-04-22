@@ -17,6 +17,12 @@ function App() {
     });
     setTodos(newTodoList);
   }
+
+  function handleEditTodo(index) {
+    const todoToBeEdited = todos[index];
+    setNewTodo(todoToBeEdited);
+    handleDeleteTodo(index);
+  }
   return (
     <>
       <TodoInput
