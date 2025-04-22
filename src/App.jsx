@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     if (!localStorage) return;
 
-    const localTodos = localStorage.getItem("todos");
+    let localTodos = localStorage.getItem("todos");
     if (!localTodos) return;
     localTodos = JSON.parse(localTodos).todos;
   }, []);
