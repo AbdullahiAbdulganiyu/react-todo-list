@@ -20,6 +20,7 @@ function App() {
     const newTodoList = todos.filter((todo, todoIndex) => {
       return todoIndex !== index;
     });
+    persistData(newTodoList);
     setTodos(newTodoList);
   }
 
