@@ -6,7 +6,11 @@ export default function TodoCard(props) {
     <li className="todoItem">
       {children}
       <div className="actionsContainer">
-        <button>
+        <button
+          onClick={() => {
+            handleEditTodo(index);
+          }}
+        >
           <i className="fa-solid fa-pen-to-square"></i>
         </button>
         <button
