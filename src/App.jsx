@@ -30,7 +30,9 @@ function App() {
     handleDeleteTodo(index);
   }
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (!localStorage) return;
+  }, []);
   return (
     <>
       <TodoInput
