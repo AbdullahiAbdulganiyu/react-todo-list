@@ -35,6 +35,7 @@ function App() {
 
     const localTodos = localStorage.getItem("todos");
     if (!localTodos) return;
+    localTodos = JSON.parse(localTodos).todos;
   }, []);
   return (
     <>
