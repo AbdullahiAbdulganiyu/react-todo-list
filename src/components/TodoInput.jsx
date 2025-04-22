@@ -16,7 +16,14 @@ export default function TodoInput(props) {
         value={newTodo}
         onChange={handleNewTodo}
       />
-      <button onClick={() => handleAddTodos(newTodo)}>Add</button>
+      <button
+        onClick={() => {
+          handleAddTodos(newTodo);
+          setNewTodo("");
+        }}
+      >
+        Add
+      </button>
     </header>
   );
 }
