@@ -19,7 +19,11 @@ function App() {
   }
   return (
     <>
-      <TodoInput handleAddTodos={handleAddTodos} />
+      <TodoInput
+        newTodo={newTodo}
+        setNewTodo={setNewTodo}
+        handleAddTodos={handleAddTodos}
+      />
       <TodoList todos={todos} handleDeleteTodo={handleDeleteTodo} />
     </>
   );
