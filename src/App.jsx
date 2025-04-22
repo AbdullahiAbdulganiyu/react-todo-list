@@ -30,7 +30,11 @@ function App() {
         setNewTodo={setNewTodo}
         handleAddTodos={handleAddTodos}
       />
-      <TodoList todos={todos} handleDeleteTodo={handleDeleteTodo} />
+      <TodoList
+        todos={todos}
+        handleDeleteTodo={handleDeleteTodo}
+        handleEditTodo={handleEditTodo}
+      />
     </>
   );
 }
