@@ -6,6 +6,10 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
 
+  function persistData(newList) {
+    localStorage.setItem("todos", JSON.stringify({ todos: newList }));
+  }
+
   function handleAddTodos(newTodo) {
     const newTodoList = [...todos, newTodo];
     setTodos(newTodoList);
