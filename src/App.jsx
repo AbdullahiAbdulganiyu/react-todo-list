@@ -36,7 +36,7 @@ function App() {
     let localTodos = localStorage.getItem("todos");
     if (!localTodos) return;
     localTodos = JSON.parse(localTodos).todos;
-    setNewTodo(localTodos);
+    setTodos(localTodos);
   }, []);
   return (
     <>
