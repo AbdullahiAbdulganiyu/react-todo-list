@@ -34,6 +34,7 @@ function App() {
     if (!localStorage) return;
 
     const localTodos = localStorage.getItem("todos");
+    if (!localTodos) return;
   }, []);
   return (
     <>
