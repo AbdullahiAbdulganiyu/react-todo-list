@@ -12,6 +12,7 @@ function App() {
 
   function handleAddTodos(newTodo) {
     const newTodoList = [...todos, newTodo];
+    persistData(newTodoList);
     setTodos(newTodoList);
   }
 
