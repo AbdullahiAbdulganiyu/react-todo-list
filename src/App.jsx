@@ -8,6 +8,11 @@ function App() {
     "Eat some food and vegies",
     "Pick up the Kids from School",
   ]);
+
+  function handleAddTodos(newTodo) {
+    const newTodoList = [...todos, newTodo];
+    setTodos(newTodoList);
+  }
   return (
     <>
       <TodoInput />
