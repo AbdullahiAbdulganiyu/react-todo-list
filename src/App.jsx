@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 
@@ -29,6 +29,8 @@ function App() {
     setNewTodo(todoToBeEdited);
     handleDeleteTodo(index);
   }
+
+  useEffect(() => {}, []);
   return (
     <>
       <TodoInput
